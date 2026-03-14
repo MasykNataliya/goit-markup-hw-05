@@ -1000,7 +1000,7 @@ textarea:hover {
 }
 
 .modal-close-btn:hover,
-.modal-close-btn:focu {
+.modal-close-btn:focus {
   border: none;
 }
 
