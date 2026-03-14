@@ -653,7 +653,6 @@ img {
   gap: 16px;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   font-weight: 500;
@@ -692,8 +691,7 @@ img {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
-  padding-left: 16px;
-  padding-top: 8px;
+  
 }
 
 /* #endregion footer */
@@ -854,7 +852,7 @@ img {
 
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  /*width: 169px;*/
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
@@ -922,7 +920,8 @@ height: 120px;
 .checkbox-icon {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%; /* ✅ центр по горизонталі */
+  transform: translate(-50%, -50%);
   fill: transparent;
   /*display: none;*/
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -984,13 +983,13 @@ height: 120px;
   fill: #4d5ae5;
 }*/
 
-input:focus + svg,
-input:hover + svg {
+.modal .input-wrapper input:focus + .form-icon,
+.modal .input-wrapper input:hover + .form-icon {
   fill: #4d5ae5;
 }
-input[type="checkbox"]:checked {
+/*input[type="checkbox"]:checked {
   fill: #404bbf;
-}
+}*/
 
 input:focus,
 input:hover,
