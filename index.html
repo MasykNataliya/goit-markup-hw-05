@@ -641,88 +641,91 @@
           </svg>
         </button>
 
-        <div class="form">
+        <form class="form-wrapper" action="#" method="post">
           <p class="modal-title">
             Leave your contacts and we will call you back
           </p>
-          <div class="form-field">
-            <label class="form-label" for="input-name">Name</label>
-            <div class="input-wrapper">
-              <input
-                class="form-input"
-                name="input-name"
-                id="input-name"
-                type="text"
-              />
-              <svg class="form-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="input-phone">Phone</label>
-            <div class="input-wrapper">
-              <input
-                class="form-input"
-                name="input-phone"
-                id="input-phone"
-                type="tel"
-              />
-              <svg class="form-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="input-email">Email</label>
-
-            <div class="input-wrapper">
-              <input
-                class="form-input"
-                name="input-email"
-                id="input-email"
-                type="email"
-              />
-              <svg class="form-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="input-comment">Comment</label>
-
-            <div class="input-wrapper">
-              <textarea
-                class="form-input form-textarea"
-                name="input-comment"
-                id="input-comment"
-                rows="3"
-                placeholder="Text input"
-              ></textarea>
-            </div>
-          </div>
-        </div>
-        <div class="form-checkbox">
-          <div class="input-wrapper">
-            <input
-              class="form-input visually-hidden"
-              name="input-checkbox"
-              id="input-checkbox"
-              type="checkbox"
-            />
-
-            <label class="form-label" for="input-checkbox">
-              <span class="checkbox-box">
-                <svg class="checkbox-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-Vector"></use>
+          <div class="form">
+            <div class="form-field">
+              <label class="form-label" for="input-name">Name</label>
+              <div class="input-wrapper">
+                <input
+                  class="form-input"
+                  name="input-name"
+                  id="input-name"
+                  type="text"
+                />
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-person"></use>
                 </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a href="#" class="privacy-link">Privacy Policy</a>
-            </label>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="input-phone">Phone</label>
+              <div class="input-wrapper">
+                <input
+                  class="form-input"
+                  name="input-phone"
+                  id="input-phone"
+                  type="tel"
+                />
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="input-email">Email</label>
+
+              <div class="input-wrapper">
+                <input
+                  class="form-input"
+                  name="input-email"
+                  id="input-email"
+                  type="email"
+                />
+                <svg class="form-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="input-comment">Comment</label>
+
+              <div class="input-wrapper">
+                <textarea
+                  class="form-input form-textarea"
+                  name="input-comment"
+                  id="input-comment"
+                  rows="3"
+                  placeholder="Text input"
+                ></textarea>
+              </div>
+            </div>
           </div>
-        </div>
-        <button type="submit" class="send-btn">Send</button>
+
+          <div class="form-checkbox">
+            <div class="input-wrapper">
+              <input
+                class="form-input visually-hidden"
+                name="input-checkbox"
+                id="input-checkbox"
+                type="checkbox"
+              />
+
+              <label class="form-label" for="input-checkbox">
+                <span class="checkbox-box">
+                  <svg class="checkbox-icon" width="10" height="8">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a href="#" class="privacy-link">Privacy Policy</a>
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="send-btn">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
