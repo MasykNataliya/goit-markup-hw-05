@@ -616,6 +616,74 @@ img {
   margin: 0;
   padding: 0;
 }
+.footer-subscribe {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.subscribe-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.subscribe-icon {
+  fill: #fff;
+}
+
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+
+  cursor: pointer;
+  margin: 0 auto;
+
+  border: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-input {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* #endregion footer */
 
@@ -702,7 +770,7 @@ img {
   align-items: center;
   justify-content: center;
 }
-.input-wrapper svg {
+.form-icon {
   position: absolute;
   left: 16px;
   top: 50%;
@@ -803,6 +871,42 @@ img {
   width: 16px;
   height: 16px;
 }
+.form-checkbox .form-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.checkbox-box {
+  position: relative;
+  width: 16px;
+  height: 16px;
+
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: black;
+  /*display: none;*/
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  vertical-align: middle;
+}
 
 /* #endregion modal */
 
@@ -831,7 +935,9 @@ img {
 }
 
 .site-footer .social-list-link:hover,
-.site-footer .social-list-link:focus {
+.site-footer .social-list-link:focus,
+.subscribe-btn:hover,
+.subscribe-btn:focus {
   background-color: #31d0aa;
 }
 
@@ -847,9 +953,10 @@ img {
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+/*
 .input:checked + label > span {
   fill: #4d5ae5;
-}
+}*/
 
 input:focus + svg,
 input:hover + svg {
@@ -867,4 +974,18 @@ input:hover {
 .modal-close-btn:hover,
 .modal-close-btn:focu {
   border: none;
+}
+
+.visually-hidden:checked + .form-label .checkbox-box {
+  background-color: #404bbf;
+  border-color: #404bbf;
+}
+
+.visually-hidden:checked + .form-label .checkbox-icon {
+  fill: #fff;
+}
+
+.subscribe-input:focus,
+.subscribe-input:hover {
+  border-color: #31d0aa;
 }
